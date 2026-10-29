@@ -1,0 +1,15 @@
+@media (max-width: 767px){
+    .custom-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1023px) {
+    .custom-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}

@@ -1,0 +1,59 @@
+<template>
+    <template if:true={account}>
+        <div class="slds-m-around_medium">
+            <h1 class="slds-text-heading_medium slds-text-align_center">
+                Account Information
+            </h1>
+        </div>
+
+        <div class="slds-p-around_medium slds-box slds-theme_default">
+            <lightning-tile label="Account" href="">
+                <dl class="slds-dl_horizontal">
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Account Name:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.Name}</p>
+                    </dd>
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Account Owner:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.Owner.Name}</p>
+                    </dd>
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Annual Revenue:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.AnnualRevenue}</p>
+                    </dd>
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Industry:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.Industry}</p>
+                    </dd>
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Phone:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.Phone}</p>
+                    </dd>
+
+                    <dt class="slds-dl_horizontal__label">
+                        <p class="slds-truncate slds-text-title_bold">Website:</p>
+                    </dt>
+                    <dd class="slds-dl_horizontal__detail slds-tile__meta">
+                        <p class="slds-truncate">{account.Website}</p>
+                    </dd>
+
+                </dl>
+            </lightning-tile>
+        </div>
+    </template>
+</template>

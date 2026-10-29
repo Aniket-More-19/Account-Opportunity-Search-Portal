@@ -1,0 +1,16 @@
+<template>
+    <div>
+        <c-account-opportunity-search 
+            onsearch={handleSearch}
+        >
+        </c-account-opportunity-search>
+    </div>
+    <div class="slds-grid slds-gutters_direct-large slds-var-p-around_large custom-grid">
+        <div class="slds-col">
+            <c-account-information account={account}></c-account-information>
+        </div>
+        <div class="slds-col">
+            <c-linked-opportunities opportunities={opportunities}></c-linked-opportunities>
+        </div>
+    </div>
+</template>

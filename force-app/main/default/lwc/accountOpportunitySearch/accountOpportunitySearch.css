@@ -1,0 +1,26 @@
+.search-component{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.heading{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: rgb(167, 6, 211);
+}
+.search-bar{
+}
+
+@media (max-width: 767px) {
+    .heading{
+        text-align: center;
+    }
+
+    .search-bar{
+        width: 80%;
+    }
+}
